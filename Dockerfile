@@ -1,8 +1,7 @@
 FROM registry.access.redhat.com/ubi9/python-39:latest
 WORKDIR /app
-COPY requirements.txt ./requirements.txt
+COPY requirements.txt requirements.txt
 RUN pip install -r requiremts.txt
-EXPOSE 8501
-COPY ./app
-ENTRYPOINT ["streamlit", "run"]
-CMD ["app.py"]
+COPY . .
+#ENTRYPOINT ["streamlit", "run"]
+CMD ["python", "-m", "streamlit", "run", "app.py"]
