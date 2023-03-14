@@ -8,5 +8,5 @@ RUN pip install -r ./requirements.txt
 COPY . /app
 # ENTRYPOINT ["streamlit", "run"]
 # ENTRYPOINT [“streamlit”, “run”, “app.py”, “–server.port=8080”, “–server.address=0.0.0.0”]
-ENTRYPOINT [“streamlit”, “run”, “app.py”, “–server.port=8080”, “–server]
-#CMD ["app.py"]
+# ENTRYPOINT [“streamlit”, “run”, “app.py”, “–server.port=8080”]
+CMD ["python", "-m", "streamlit", "run", "app.py", “–-server.port=8080”]
