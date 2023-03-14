@@ -3,6 +3,7 @@ EXPOSE 8080
 WORKDIR /app
 ENV HOME="/home"
 COPY requirements.txt ./requirements.txt
+RUN pip install -U pip
 RUN pip install -r ./requirements.txt
 COPY . /app
 # ENTRYPOINT ["streamlit", "run"]
