@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi9/python-39:latest
+# FROM registry.access.redhat.com/ubi9/python-39:latest
+FROM python:3.11
 EXPOSE 8080
 WORKDIR /app
 ENV HOME="/home"
