@@ -22,6 +22,9 @@ for i in range(1, 101):
     last_rows = new_rows
     time.sleep(0.05)
 
+# Streamlit widgets automatically run the script from top to bottom. Since
+# this button is not connected to any other logic, it just causes a plain
+# rerun.
 st.button("Re-run")
 
 # with st.container():
