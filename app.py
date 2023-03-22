@@ -20,7 +20,7 @@ for i in range(1, 101):
     new_rows = last_rows[-1, :] + np.random.randn(50, 1).cumsum(axis=0)
     chart.add_rows(new_rows)
     last_rows = new_rows
-    time.sleep(0.05)
+    time.sleep(0.06)
 
 # Streamlit widgets automatically run the script from top to bottom. Since
 # this button is not connected to any other logic, it just causes a plain
