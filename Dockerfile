@@ -1,5 +1,6 @@
 # FROM registry.access.redhat.com/ubi9/python-39:latest
-FROM openshift-registry.eu-at-1.icp.infineon.com/openshift/ifx-python:3.9-ubi8
+# FROM openshift-registry.eu-at-1.icp.infineon.com/openshift/ifx-python:3.9-ubi8
+FROM image-registry.openshift-image-registry.svc:5000/openshift/ifx-python:3.9-ubi8
 # FROM python:3.11
 EXPOSE 8080
 # WORKDIR /app
